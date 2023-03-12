@@ -1,0 +1,66 @@
+
+body {
+	background-color: #EAEAEA; /* a light gray background color */
+	font-family: 'Helvetica Neue', sans-serif; /* a new font for the entire page */
+}
+
+#grid-container {
+	height: 600px;
+	width: 600px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid black;
+}
+.title {
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	color: #1C1C1C;
+	margin: 40px 0;
+}
+
+#board-buttons {
+	text-align: center;
+}
+
+#board-buttons button {
+	margin: 10px;
+}
+
+#clear-button {
+	background-color: #f44336;
+}
+
+button {
+	background-color: #2a2c4b;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #555;
+}
+
+button:active {
+	background-color: #444;
+}
+
+.square {
+	width: calc(100% / 16);
+	height: calc(100% / 16);
+	/* border: 1px solid black; */
+	background-color: white;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.square.hovered {
+	background-color: #1C1C1C; /* change background color when hovered */
+}
